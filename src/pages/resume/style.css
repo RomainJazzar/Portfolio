@@ -1,0 +1,22 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0px;
+    background-color: #171717;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.download-btn {
+    color: var(--white);
+    display: flex;
+}
+
+.download-btn span {
+    color: var(--white);
+}

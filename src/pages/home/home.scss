@@ -1,0 +1,81 @@
+.hero-container {
+
+  background-color: var(--light--gray);
+  /* Example background color */
+  padding: 20px;
+}
+
+.hero-container h1 {
+  font-size: 3.5em;
+  color: var(--white);
+  margin-top: 0;
+  /* Example text color */
+}
+
+span {
+  color: var(--headings--color);
+}
+
+.hero-container p {
+  color: var(--white);
+  /* Example text color */
+  margin-bottom: 1em;
+  width: 85%;
+  font-size: 20px;
+}
+
+button {
+  background-color: var(--headings--color);
+
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.main-home {
+  display: flex;
+  align-items: center;
+  border: 2px solid gray;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.556),
+    0 6px 6px rgba(0, 0, 0, 0.479);
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 0 50px;
+  background-color: var(--light--gray);
+
+}
+
+.main-home:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25),
+    0 12px 10px rgba(0, 0, 0, 0.22);
+}
+
+.home-div {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  background-color: var(--light--gray);
+}
+
+/* Add this at the end of your CSS file */
+@media (max-width: 768px) {
+  .main-home {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-container,
+  .second-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-container h1,
+  .hero-container p {
+    text-align: center;
+    width: 100%;
+  }
+}

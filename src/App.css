@@ -1,0 +1,22 @@
+:root {
+    --white: #ffffff;
+    --black: #4d4d4d;
+
+    --light--gray: #212121;
+    --dark--gray: #171717;
+    --headings--color: #0072b2;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.main {
+    flex: 1;
+    /* Allow it to grow and take up all available space */
+
+
+}

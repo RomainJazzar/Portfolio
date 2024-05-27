@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.animation-div {
+    width: 50%;
+
+}
+
+.skills-div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.about {
+
+    background-color: var(--dark--gray);
+    padding: 100px 50px;
+    // min-height: calc(100vh - 250px);
+}
+
+/* Add this at the end of your CSS file */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animation-div {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .skills-div {
+        width: 100%;
+        margin-top: 40px;
+
+        display: flex;
+        align-items: center;
+    }
+
+}

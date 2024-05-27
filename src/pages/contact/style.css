@@ -1,0 +1,116 @@
+/* styles.css */
+.contact-container {
+    display: flex;
+    color: white;
+    background-color: #333;
+    /* width: 100%; */
+    justify-content: center;
+    padding: 30px;
+}
+
+.contact-info {
+    flex-basis: 49%;
+    padding: 30px;
+}
+
+.form-heading {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding-left: 30px;
+    resize: none;
+    /* Rest of the input and textarea styles to match your design */
+}
+
+.input-group svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Additional styles for the icons */
+}
+
+
+/* CustomForm.css */
+.custom-form {
+    background-color: #212121;
+    color: #fff;
+    flex-basis: 49%;
+
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 96%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 0;
+    padding-left: 30px;
+    font-size: 1em;
+    resize: none;
+}
+
+.form-group .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    color: #fff;
+}
+
+.message-area .icon {
+    top: 20%;
+    transform: translateY(-80%);
+}
+
+
+/* Adjustments for placeholders */
+::placeholder {
+    color: #bbb;
+}
+
+.options p {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+
+/* Add this at the end of your CSS file */
+@media (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-basis: 100%;
+        text-align: center;
+
+    }
+
+    .options p {
+        justify-content: center;
+    }
+}
